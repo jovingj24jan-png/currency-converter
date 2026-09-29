@@ -45,7 +45,7 @@ export default function Header({ onSignIn }) {
         <ul>
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={close}>
+              <a href={link.href} className={link.href === '#home' ? 'is-active' : undefined} onClick={close}>
                 {link.label}
               </a>
             </li>
